@@ -1,0 +1,164 @@
+:root {
+  /* Pod Color Palette */
+  --bg-primary: #071A2F;      /* Deep Navy Background */
+  --bg-surface: #0F2B4A;      /* Card & Element Surface */
+  --text-main: #FFFFFF;       /* Primary High Contrast Text */
+  --text-muted: #94A3B8;      /* Secondary Body Text */
+  --accent-cyan: #00D9FF;     /* Primary Call to Action Accent */
+  --accent-emerald: #00C896;  /* Trust & Verification Indicators */
+  --border-color: #1E3A5F;   /* Structured Dividers */
+
+  /* Global Typography & Spatial Rules */
+  --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --radius-card: 14px;
+  --radius-btn: 10px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  font-family: var(--font-family);
+  line-height: 1.5;
+  padding: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 24px;
+}
+
+.brand-logo {
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: var(--accent-cyan);
+  letter-spacing: -0.5px;
+}
+
+.tagline {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.hero-section {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-card);
+  padding: 24px 20px;
+  margin-bottom: 24px;
+}
+
+.badge-location {
+  display: inline-block;
+  background-color: rgba(0, 217, 255, 0.1);
+  color: var(--accent-cyan);
+  border: 1px solid var(--accent-cyan);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 1.75rem;
+  line-height: 1.25;
+  margin-bottom: 12px;
+}
+
+.hero-desc {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+.btn-primary-action {
+  display: block;
+  width: 100%;
+  background-color: var(--accent-cyan);
+  color: var(--bg-primary);
+  font-weight: 700;
+  font-size: 1rem;
+  text-align: center;
+  padding: 14px 0;
+  border-radius: var(--radius-btn);
+  text-decoration: none;
+}
+
+.section-title {
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+}
+
+.artisan-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-card);
+  padding: 18px;
+  margin-bottom: 16px;
+}
+
+.artisan-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.verified-badge {
+  color: var(--accent-emerald);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.details-grid {
+  margin: 12px 0;
+  border-top: 1px solid var(--border-color);
+  padding-top: 10px;
+}
+
+.detail-item {
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+  color: var(--text-muted);
+}
+
+.detail-item strong {
+  color: var(--text-main);
+}
+
+.trust-box {
+  background-color: rgba(0, 200, 150, 0.08);
+  border-left: 3px solid var(--accent-emerald);
+  padding: 10px 12px;
+  border-radius: 0 8px 8px 0;
+  margin: 14px 0;
+}
+
+.trust-box p {
+  font-size: 0.85rem;
+  color: var(--text-main);
+  font-style: italic;
+}
+
+.btn-call {
+  display: block;
+  width: 100%;
+  background-color: var(--accent-emerald);
+  color: var(--bg-primary);
+  font-weight: 700;
+  text-align: center;
+  padding: 12px 0;
+  border-radius: var(--radius-btn);
+  text-decoration: none;
+}
